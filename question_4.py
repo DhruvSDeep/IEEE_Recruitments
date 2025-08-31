@@ -12,7 +12,7 @@ arr = np.array(arr)
 newArr = arr[1:4, 1:4]
 print(newArr)
 
-lcol = arr[:, 4:5]
-frow = arr[0:1, :]
+lcol = newArr[:, 2:3]
+frow = newArr[0:1, :]
 
 print(np.dot(frow, lcol)[0][0])
