@@ -9,12 +9,17 @@ for i in range(5):
     arr.append(row)
 arr = np.array(arr)
 
+
+
 max = max(arr.flatten())
 min = min(arr.flatten())
 mean = np.mean(arr)
 print("The maximum value in the array is:", max)
 print("The minimum value in the array is:", min)
 print("The mean value in the array is:", mean)
+
+arr = ((arr - min) / (max - min))
+print(arr)
 
 arr = arr.flatten()
 arr.sort()
